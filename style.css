@@ -1,0 +1,204 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    list-style:none
+}
+.logo{
+    width: 200px;
+}
+#header{
+    min-height: 705px;
+    background-image:url('images/header-bg.jpg');
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center ; 
+}
+.nav-link:active,
+.nav-link:hover,
+.nav-link:focus {
+    color: rgb(255, 219, 13) !important;
+}
+#header h2{
+    font-size: 4em;
+}
+#porfolio, #team{
+    background-color: #f8f9fa;
+}
+#contact{
+    background-image: url('images/map-image.png');
+}
+ #about{
+    height: auto;
+    margin-bottom: 80px;
+   
+}
+#about .timeline{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+#about .left{
+    
+    left: -30%;
+}
+#about .right{
+    left: 30%;
+}
+#about .contai img{
+    position: absolute;
+    border: 3px solid #aaa;
+    width: 150px;
+    border-radius: 50%;
+    right: -25%;
+    top: -50px;
+    z-index: 10;
+    background-color: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about .contai .h1-image{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    right: -25%;
+    top: -50px;
+    z-index: 10;
+    border: 3px solid #aaa;
+    background-color: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+} 
+#about .right img{
+    left: -25%;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #aaa;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+#about .contai{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;    
+}
+.contai::after{
+    
+} 
+        /* portfolio */
+
+
+    
+        .imgs{
+            position: relative;
+        }
+        .hover{
+            position: absolute;
+            left:0;
+            top: 0;
+            right:0;
+            bottom: 0;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            background-color:rgba(255, 200, 0, 0.998)   ;
+        }
+        .rol{
+            position: absolute;
+            left: 44%;
+            top: 40%;
+            color: #fff;
+        }
+        .imgs:hover .hover{
+            opacity: 0.855;
+        }
+        .texty{
+            width: 67%;
+        }
+        .texty p{
+            font-size: 14px;
+        }
+        .missy p{
+            line-height: 3px;
+        }
+        .btny2{
+            width: 180px;
+            height: 55px;
+            background-color: rgb(255, 208, 0);
+            border-radius: 5px;
+            border: none;
+        }
+        .btny2:hover{
+            background-color: rgb(216, 179, 11);
+        }
+        .pixy2{
+            margin-top: -20px;
+        }
+
+@media screen and (max-width: 992px){
+    .timeline::after{
+        left: 20%;
+        margin-left: 3px;
+    }
+    #about .right img{
+        left: -120px;
+    }
+    #about .left, #about .right{
+        text-align: left;
+        left: 15%;
+    }
+
+    #about .contai{
+        width: 80%;
+    }
+    #about .contai img, #about .contai .h1-image{
+        right: 93%;
+    }
+    .rol{
+        position: absolute;
+        left: 40%;
+        top: 40%;}
+    
+}
+@media screen and (max-width: 580px){
+    .timeline::after, #about .contai img, #about .contai .h1-image{
+        display: none;
+    }
+    #about .contai{
+        width: 100%;
+    }
+    #about .left, #about .right{
+        left: 0%;
+    }
+    .rol{
+        position: absolute;
+        left: 42%;
+        top: 40%;
+        color: #fff;
+    } 
+}
+@media screen and (max-width: 380px){
+     .rol{
+        /* position: absolute;
+        left: 40%;
+        top: 40%;
+        color: #fff; */
+        font-size: 0.5em;
+    } 
+}
